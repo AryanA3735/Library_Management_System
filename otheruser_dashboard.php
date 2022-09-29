@@ -93,7 +93,7 @@ td, a{
     ?>
            <div class="container">
             <div class="innerdiv">
-            <div class="row"><img class="imglogo" src="images/logo.png"/></div>
+            <div class="row"><img class="imglogo" src="/images/logo.png"/></div>
             <div class="leftinnerdiv">
                 <Button class="greenbtn" >Welcome</Button>
                 <Button class="greenbtn" onclick="openpart('myaccount')"> My Account</Button>
