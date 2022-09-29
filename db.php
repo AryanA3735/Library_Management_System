@@ -11,7 +11,7 @@ function setconnection(){
         // $this->connection=new PDO("mysql:host=remotemysql.com; dbname=Egqi5VWYI2","Egqi5VWYI2","8782gwAt1W");
         
         // include("/config/config.php");
-        include("config/config.php");
+        include("/config/config.php");
         $this->connection=new PDO("mysql:host=".HOSTNAME."; dbname=".DBNAME,USER,PASSWORD);
         
         // echo "Done";
