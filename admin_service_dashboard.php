@@ -99,7 +99,7 @@ elseif($msg=="fail"){
 
         <div class="container">
         <div class="innerdiv">
-            <div class="row"><img class="imglogo" src="images/logo.png"/></div>
+            <div class="row"><img class="imglogo" src="/public/images/logo.png"/></div>
             <div class="leftinnerdiv">
                 <Button class="greenbtn"> ADMIN</Button>
                 <Button class="greenbtn" onclick="openpart('addbook')" >ADD BOOK</Button>
