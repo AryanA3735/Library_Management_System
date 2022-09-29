@@ -65,10 +65,10 @@ CREATE TABLE `book` (
 --
 
 INSERT INTO `book` (`id`, `bookpic`, `bookname`, `bookdetail`, `bookaudor`, `bookpub`, `branch`, `bookprice`, `bookquantity`, `bookava`, `bookrent`) VALUES
-(7, 'book1.png', 'demo', 'demo', 'demo', 'demo', 'BSIT', '100', '1', 1, 0),
-(8, 'book2.png', 'book2', 'Mathematics', 'abc', 'abc', 'BSCS', '100', '30', 30, 0),
-(9, 'book3.png', 'book3', 'Data Structure', 'Cormen', 'MIT Press', 'BSCS', '100', '49', 49, 0),
-(10, 'book4.png', 'book4', 'c/c++', 'Bjarne Stroustrup', 'Press', 'BSSE', '200', '28', 28, 0);
+(7, 'book1.png', 'book1', 'Algorithms', 'def', 'demo', 'CS', '100', '1', 1, 0),
+(8, 'book2.png', 'book2', 'Mathematics', 'abc', 'abc', 'EE', '100', '30', 30, 0),
+(9, 'book3.png', 'book3', 'Data Structure', 'Cormen', 'MIT Press', 'CS', '100', '49', 49, 0),
+(10, 'book4.png', 'book4', 'c/c++', 'Bjarne Stroustrup', 'Press', 'CS', '200', '28', 28, 0);
 
 -- --------------------------------------------------------
 
