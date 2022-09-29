@@ -85,11 +85,11 @@
     body {
         background-color: rgb(105, 221, 105);
     }
-    .addNewBookTable td, .issueBookTable td, .addPersontTable td{
+    .addNewBookTable td, .issueBookTable td, .addPersontTable td, .bookDetailTable td{
         text-align: left;
         background-color: rgb(105, 221, 105);
     }
-    .addNewBookTable, .issueBookTable, .addPersontTable{
+    .addNewBookTable, .issueBookTable, .addPersontTable, .bookDetailTable{
         margin-top: 10px;
         margin-left: auto;
         margin-right: auto;
@@ -383,7 +383,7 @@ issue book -->
                                                                             echo "display:none";
                                                                         } ?>">
 
-                    <Button class="greenbtn">BOOK DETAIL</Button>
+                    <Button class="greenbtn">Book Details</Button>
                     </br>
                     <?php
                     $u = new data;
@@ -406,16 +406,25 @@ issue book -->
                     }
                     ?>
 
-                    <img width='150px' height='150px' style='border:1px solid #333333; float:left;margin-left:20px' src="uploads/<?php echo $bookimg ?> " />
-                    </br>
-                    <p style="color:black"><u>Book Name:</u> &nbsp&nbsp<?php echo $bookname ?></p>
-                    <p style="color:black"><u>Book Detail:</u> &nbsp&nbsp<?php echo $bookdetail ?></p>
-                    <p style="color:black"><u>Book Authour:</u> &nbsp&nbsp<?php echo $bookauthour ?></p>
-                    <p style="color:black"><u>Book Publisher:</u> &nbsp&nbsp<?php echo $bookpub ?></p>
-                    <p style="color:black"><u>Book Branch:</u> &nbsp&nbsp<?php echo $branch ?></p>
-                    <p style="color:black"><u>Book Price:</u> &nbsp&nbsp<?php echo $bookprice ?></p>
-                    <p style="color:black"><u>Book Available:</u> &nbsp&nbsp<?php echo $bookava ?></p>
-                    <p style="color:black"><u>Book Rent:</u> &nbsp&nbsp<?php echo $bookrent ?></p>
+                    <img width='150px' height='150px' style='border:1px solid #333333; float:left;margin-left:30px' src="uploads/<?php echo $bookimg ?> " />
+                    <table style="margin-left:250px; margin-top: 0;" class="bookDetailTable">
+                        <tr><td>Book Name: &nbsp&nbsp</td> <td><?php echo $bookname ?></td></tr>
+                        <tr><td>Book Detail: &nbsp&nbsp</td> <td><?php echo $bookdetail ?></td></tr>
+                        <tr><td>Book Authour: &nbsp&nbsp</td> <td><?php echo $bookauthour ?></td></tr>
+                        <tr><td>Book Publisher: &nbsp&nbsp</td> <td><?php echo $bookpub ?></td></tr>
+                        <tr><td>Book Branch: &nbsp&nbsp</td> <td><?php echo $branch ?></td></tr>
+                        <tr><td>Book Price: &nbsp&nbsp</td> <td><?php echo $bookprice ?></td></tr>
+                        <tr><td>Book Available: &nbsp&nbsp</td> <td><?php echo $bookava ?></td></tr>
+                        <tr><td>Book Rent: &nbsp&nbsp</td> <td><?php echo $bookrent ?></td></tr>
+                    </table>
+                    <!-- <p style="color:black">Book Name: &nbsp&nbsp<?php echo $bookname ?></p>
+                    <p style="color:black">Book Detail: &nbsp&nbsp<?php echo $bookdetail ?></p>
+                    <p style="color:black">Book Authour: &nbsp&nbsp<?php echo $bookauthour ?></p>
+                    <p style="color:black">Book Publisher: &nbsp&nbsp<?php echo $bookpub ?></p>
+                    <p style="color:black">Book Branch: &nbsp&nbsp<?php echo $branch ?></p>
+                    <p style="color:black">Book Price: &nbsp&nbsp<?php echo $bookprice ?></p>
+                    <p style="color:black">Book Available: &nbsp&nbsp<?php echo $bookava ?></p>
+                    <p style="color:black">Book Rent: &nbsp&nbsp<?php echo $bookrent ?></p> -->
 
 
                 </div>
