@@ -100,7 +100,7 @@ class data extends db {
         $this->bookquantity=$bookquantity;
 
        $q="INSERT INTO book (bookpic,bookname, bookdetail, bookaudor, bookpub, branch, bookprice,bookquantity,bookava,bookrent)VALUES('$bookpic', '$bookname', '$bookdetail', '$bookaudor', '$bookpub', '$branch', '$bookprice', '$bookquantity','$bookquantity',0)";
-
+        echo "5555";
         if($this->connection->exec($q)) {
             header("Location:admin_service_dashboard.php?msg=done");
         }

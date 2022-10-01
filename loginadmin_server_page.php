@@ -26,6 +26,4 @@ elseif($login_email!=null&&$login_pasword!=null){
 
 }
 
-
-
-
+?>

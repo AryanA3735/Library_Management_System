@@ -12,3 +12,4 @@ $returnDate=Date('d/m/Y', strtotime('+'.$days.'days'));
 $obj=new data();
 $obj->setconnection();
 $obj->issuebook($book,$userselect,$days,$getdate,$returnDate);
+?>
