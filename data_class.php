@@ -1,5 +1,5 @@
-<?php include("db.php");
-
+<?php 
+include("db.php");
 class data extends db {
 
     private $bookpic;
@@ -35,14 +35,14 @@ class data extends db {
         $this->type=$type;
 
 
-         $q="INSERT INTO userdata(name, email, pass,type) 
+         $q="INSERT INTO userdata(name,email,pass,type) 
                 VALUES('$name','$email','$pasword','$type');";
          if($this->connection->exec($q)) {
              echo "jj";
-            header("Location:admin_service_dashboard.php?msg=New Add done");
-        }
-
-        else {
+             header("Location:admin_service_dashboard.php?msg=New Add done");
+            }
+            
+            else {
             header("Location:admin_service_dashboard.php?msg=Register Fail");
         }
 
@@ -441,3 +441,5 @@ class data extends db {
 
     }
 }
+
+?>
