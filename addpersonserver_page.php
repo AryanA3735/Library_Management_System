@@ -11,3 +11,4 @@ $type= $_POST['type'];
 $obj=new data();
 $obj->setconnection();
 $obj->addnewuser($addnames,$addpass,$addemail,$type);
+?>
