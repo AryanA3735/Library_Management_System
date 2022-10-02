@@ -58,8 +58,14 @@
         background-color: rgb(16, 170, 16);
         color: white;
         width: 95%;
+        /* padding: 3%; */
+        white-space: nowrap;
         height: 40px;
         margin-top: 8px;
+        font-size: 100%;
+    }
+    .greenbtncl:hover {
+        background-color: rgb(16, 256, 16);
     }
 
     .greenbtn,
@@ -130,14 +136,14 @@
             <div class="row"><img class="imglogo" src="public/images/logo.png" /></div>
             <div class="leftinnerdiv">
                 <Button class="greenbtn">Admin</Button>
-                <Button class="greenbtn" onclick="openpart('addbook')"> Add Book</Button>
-                <Button class="greenbtn" onclick="openpart('bookreport')"> Book Report</Button>
-                <Button class="greenbtn" onclick="openpart('bookrequestapprove')"> Book Requests</Button>
-                <Button class="greenbtn" onclick="openpart('addperson')"> Add Student</Button>
-                <Button class="greenbtn" onclick="openpart('studentrecord')"> Student Report</Button>
-                <Button class="greenbtn" onclick="openpart('issuebook')"> Issue Book</Button>
-                <Button class="greenbtn" onclick="openpart('issuebookreport')"> Issue Report</Button>
-                <a href="index.php"><Button class="greenbtn"> Logout</Button></a>
+                <Button class="greenbtn greenbtncl" onclick="openpart('addbook')"> Add Book</Button>
+                <Button class="greenbtn greenbtncl" onclick="openpart('bookreport')"> Book Report</Button>
+                <Button class="greenbtn greenbtncl" onclick="openpart('bookrequestapprove')"> Book Requests</Button>
+                <Button class="greenbtn greenbtncl" onclick="openpart('addperson')"> Add Student</Button>
+                <Button class="greenbtn greenbtncl" onclick="openpart('studentrecord')"> Student Report</Button>
+                <Button class="greenbtn greenbtncl" onclick="openpart('issuebook')"> Issue Book</Button>
+                <Button class="greenbtn greenbtncl" onclick="openpart('issuebookreport')"> Issue Report</Button>
+                <a href="index.php"><Button class="greenbtn greenbtncl"> Logout</Button></a>
             </div>
 
             <div class="rightinnerdiv">

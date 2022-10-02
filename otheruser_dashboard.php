@@ -69,8 +69,14 @@ $userloginid = $_SESSION["userid"] = $_GET['userlogid'];
         background-color: rgb(16, 170, 16);
         color: white;
         width: 95%;
+        /* padding: 3%; */
+        white-space: nowrap;
         height: 40px;
         margin-top: 8px;
+        font-size: 100%;
+    }
+    .greenbtncl:hover {
+        background-color: rgb(16, 256, 16);
     }
 
     .greenbtn,
@@ -106,7 +112,7 @@ $userloginid = $_SESSION["userid"] = $_GET['userlogid'];
     }
     .requestbookpanel{ 
         width: 100%;
-        height: 200px;
+        height: 250px;
         overflow-x: scroll;
         overflow-y: scroll;
     }
@@ -122,10 +128,10 @@ $userloginid = $_SESSION["userid"] = $_GET['userlogid'];
             <div class="row"><img class="imglogo" src="public/images/logo.png" alt="logo" /></div>
             <div class="leftinnerdiv">
                 <Button class="greenbtn">Welcome</Button>
-                <Button class="greenbtn" onclick="openpart('myaccount')"> My Account</Button>
-                <Button class="greenbtn" onclick="openpart('requestbook')"> Request Book</Button>
-                <Button class="greenbtn" onclick="openpart('issuereport')"> Book Report</Button>
-                <a href="index.php"><Button class="greenbtn"> Logout</Button></a>
+                <Button class="greenbtn greenbtncl" onclick="openpart('myaccount')"> My Account</Button>
+                <Button class="greenbtn greenbtncl" onclick="openpart('requestbook')"> Request Book</Button>
+                <Button class="greenbtn greenbtncl" onclick="openpart('issuereport')"> Book Report</Button>
+                <a href="index.php"><Button class="greenbtn greenbtncl"> Logout</Button></a>
             </div>
 
 
