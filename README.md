@@ -1,7 +1,7 @@
 # library_Management_System
 
--> A web application in which admin and student can interact efficiently. Student can issue book via online and
-can track their status. Admin can update book status and also able to monitor all activities.
+-> A web application deployed on Heroku in which admin and student can interact efficiently. Students can issue
+books online and can track their status. Admin can update book status and able to monitor all activities
 
 -> Link for the webApplication:
 
