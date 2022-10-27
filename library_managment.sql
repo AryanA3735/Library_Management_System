@@ -38,7 +38,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `email`, `pass`) VALUES
-(2, '2@gmail.com', '1111');
+(1, '2@gmail.com', '1111');
 
 -- --------------------------------------------------------
 
@@ -65,10 +65,10 @@ CREATE TABLE `book` (
 --
 
 INSERT INTO `book` (`id`, `bookpic`, `bookname`, `bookdetail`, `bookaudor`, `bookpub`, `branch`, `bookprice`, `bookquantity`, `bookava`, `bookrent`) VALUES
-(7, 'book1.png', 'book1', 'Algorithms', 'def', 'demo', 'CS', '100', '1', 1, 0),
-(8, 'book2.png', 'book2', 'Mathematics', 'abc', 'abc', 'EE', '100', '30', 30, 0),
-(9, 'book3.png', 'book3', 'Data Structure', 'Cormen', 'MIT Press', 'CS', '100', '49', 49, 0),
-(10, 'book4.png', 'book4', 'c/c++', 'Bjarne Stroustrup', 'Press', 'CS', '200', '28', 28, 0);
+(1, 'book1.png', 'book1', 'Algorithms', 'def', 'demo', 'CS', '100', '1', 1, 0),
+(2, 'book2.png', 'book2', 'Mathematics', 'abc', 'abc', 'EE', '100', '30', 30, 0),
+(3, 'book3.png', 'book3', 'Data Structure', 'Cormen', 'MIT Press', 'CS', '100', '49', 49, 0),
+(4, 'book4.png', 'book4', 'c/c++', 'Bjarne Stroustrup', 'Press', 'CS', '200', '28', 28, 0);
 
 -- --------------------------------------------------------
 
@@ -123,8 +123,8 @@ CREATE TABLE `userdata` (
 --
 
 INSERT INTO `userdata` (`id`, `name`, `email`, `pass`, `type`) VALUES
-(6, 'Yash', '1@gmail.com', '1111', 'student'),
-(11, 'demo2', 'demo2@gmail.com', '123', 'student');
+(1, 'Yash', '1@gmail.com', '1111', 'student'),
+(2, 'demo2', 'demo2@gmail.com', '123', 'student');
 
 --
 -- Indexes for dumped tables
@@ -171,31 +171,31 @@ ALTER TABLE `userdata`
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `book`
 --
 ALTER TABLE `book`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `issuebook`
 --
 ALTER TABLE `issuebook`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
 --
 -- AUTO_INCREMENT for table `requestbook`
 --
 ALTER TABLE `requestbook`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
 --
 -- AUTO_INCREMENT for table `userdata`
 --
 ALTER TABLE `userdata`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Constraints for dumped tables
