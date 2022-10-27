@@ -161,6 +161,10 @@ $userloginid = $_SESSION["userid"] = $_GET['userlogid'];
 
                     <table class="myaccountTable">
                         <tr>
+                            <br>
+                            <br>
+                        </tr>
+                        <tr>
                             <td>Person Name: &nbsp&nbsp</td>
                             <td><?php echo $name ?></td>
                         </tr>
