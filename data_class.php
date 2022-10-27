@@ -24,7 +24,7 @@ class data extends db {
 
     function __construct() {
         // echo " constructor ";
-        echo "</br></br>";
+        echo "";
     }
 
 

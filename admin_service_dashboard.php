@@ -34,6 +34,7 @@
         text-align: center;
         /* width: 500px; */
         margin: 100px;
+        margin-top: 10px;
     }
 
     input,select {
@@ -213,7 +214,7 @@
                                 <td>Quantity:</td><td><input type="number" name="bookquantity" /></td>
                             </tr>
                             <tr>
-                                <td>Book Photo</td><td><input type="file" name="bookphoto" /></td>
+                                <td>Book Photo</td><td><input type="file" name="bookphoto" accept="image/*" /></td>
                             </tr>
                             <tr>
                                 <td><input style="margin-left: 0;" type="submit" value="SUBMIT" /></td>
