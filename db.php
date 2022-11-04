@@ -6,9 +6,9 @@ function setconnection(){
     try{
         // Development connection
         // $this->connection=new PDO("mysql:host=localhost; dbname=library_managment","root","");
-        
+
         // Remote database connection
-        $this->connection=new PDO("mysql:host=sql12.freesqldatabase.com; dbname=sql12529722","sql12529722","7fUzx7mISL");
+        $this->connection=new PDO("mysql:host=sql12.freesqldatabase.com; dbname=sql12541230","sql12541230","7CRiJe89Bg");
         
         // include("/config/config.php");
         // include("config/config.php");
