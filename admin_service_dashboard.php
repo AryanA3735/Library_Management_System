@@ -55,6 +55,16 @@
         background-color: rgb(105, 221, 105);
     }
 
+    .normalbtn{
+        background-color: rgb(53 138 53);
+        color: white;
+        width: 95%;
+        /* padding: 3%; */
+        white-space: nowrap;
+        height: 40px;
+        margin-top: 8px;
+        font-size: 100%;        
+    }
     .greenbtn {
         background-color: rgb(16, 170, 16);
         color: white;
@@ -143,7 +153,7 @@
         <div class="innerdiv">
             <div class="row"><img class="imglogo" src="public/images/logo.png" /></div>
             <div class="leftinnerdiv">
-                <Button class="greenbtn">Admin</Button>
+                <Button class="greenbtn" disabled >Admin</Button>
                 <Button class="greenbtn greenbtncl" onclick="openpart('addbook')"> Add Book</Button>
                 <Button class="greenbtn greenbtncl" onclick="openpart('bookreport')"> Book Report</Button>
                 <Button class="greenbtn greenbtncl" onclick="openpart('bookrequestapprove')"> Book Requests</Button>
@@ -156,7 +166,7 @@
 
             <div class="rightinnerdiv">
                 <div id="bookrequestapprove" class="innerright portion" style="display:none">
-                    <Button class="greenbtn">Book Request Approve</Button>
+                    <Button class="greenbtn" disabled>Book Request Approve</Button>
 
                     <?php
                     $u = new data;
@@ -196,7 +206,7 @@
                                                                     } else {
                                                                         echo "";
                                                                     } ?>">
-                    <Button class="greenbtn">Add New Book</Button>
+                    <Button class="greenbtn" disabled>Add New Book</Button>
                     <form action="addbookserver_page.php" method="post" enctype="multipart/form-data">
                         <table class="addNewBookTable">
                             <tr>
@@ -234,7 +244,7 @@
             <!-- echo '<script>alert("Password is tewe\nsfdfds\dfsd")</script>';                               -->
             <div class="rightinnerdiv">
                 <div id="addperson" class="innerright portion" style="display:none">
-                    <Button class="greenbtn">Add Student</Button>
+                    <Button class="greenbtn" disabled>Add Student</Button>
                     <form action="addpersonserver_page.php" method="post" enctype="multipart/form-data">
                         <table class="addPersontTable">
                             <tr>
@@ -265,7 +275,7 @@
 
             <div class="rightinnerdiv">
                 <div id="studentrecord" class="innerright portion" style="display:none">
-                    <Button class="greenbtn">Student Record</Button>
+                    <Button class="greenbtn" disabled>Student Record</Button>
 
                     <?php
                     $u = new data;
@@ -295,7 +305,7 @@
 
             <div class="rightinnerdiv">
                 <div id="issuebookreport" class="innerright portion" style="display:none">
-                    <Button class="greenbtn">Issue Book Record</Button>
+                    <Button class="greenbtn" disabled>Issue Book Record</Button>
 
                     <?php
                     $u = new data;
@@ -332,7 +342,7 @@
 issue book -->
             <div class="rightinnerdiv">
                 <div id="issuebook" class="innerright portion" style="display:none">
-                    <Button class="greenbtn">Issue Book</Button>
+                    <Button class="greenbtn" disabled>Issue Book</Button>
                     <form action="issuebook_server.php" method="post" enctype="multipart/form-data">
                         <table class="issueBookTable">
                             <tr>
@@ -449,7 +459,7 @@ issue book -->
 
             <div class="rightinnerdiv">
                 <div id="bookreport" class="innerright portion" style="display:none">
-                    <Button class="greenbtn">Book Record</Button>
+                    <Button class="greenbtn" disabled>Book Record</Button>
                     <?php
                     $u = new data;
                     $u->setconnection();

@@ -255,11 +255,11 @@ class data extends db {
         $q="INSERT INTO requestbook (userid,bookid,username,usertype,bookname,issuedays)VALUES('$userid', '$bookid', '$username', '$usertype', '$bookname', '$days')";
         
         if($this->connection->exec($q)) {
-            header("Location:otheruser_dashboard.php?userlogid=$userid");
+            header("Location:otheruser_dashboard.php?userlogid=$userid&msg=pass");
         }
         
         else {
-            header("Location:otheruser_dashboard.php?msg=fail");
+            header("Location:otheruser_dashboard.php?userlogid=$userid&msg=fail");
         }
 
     }

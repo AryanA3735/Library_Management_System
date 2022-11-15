@@ -122,12 +122,28 @@ $userloginid = $_SESSION["userid"] = $_GET['userlogid'];
 
     <?php
     include("data_class.php");
+    $msg = "";
+
+    if (!empty($_REQUEST['msg'])) {
+        $msg = $_REQUEST['msg'];
+    }
+
+    if ($msg == "pass") 
+    {
+        echo "<div class='alert alert-success' role='alert'>Book Request Successfully Sent</div>";
+    } 
+    elseif ($msg == "fail")
+    {
+        echo "<div class='alert alert-danger' role='alert'>Book Request Failed</div>";
+    }
+
+
     ?>
     <div class="container">
         <div class="innerdiv">
             <div class="row"><img class="imglogo" src="public/images/logo.png" alt="logo" /></div>
             <div class="leftinnerdiv">
-                <Button class="greenbtn">Welcome</Button>
+                <Button class="greenbtn" disabled>Welcome</Button>
                 <Button class="greenbtn greenbtncl" onclick="openpart('myaccount')"> My Account</Button>
                 <Button class="greenbtn greenbtncl" onclick="openpart('requestbook')"> Request Book</Button>
                 <Button class="greenbtn greenbtncl" onclick="openpart('issuereport')"> Book Report</Button>
@@ -141,7 +157,7 @@ $userloginid = $_SESSION["userid"] = $_GET['userlogid'];
                                                                         } else {
                                                                             echo "";
                                                                         } ?>">
-                    <Button class="greenbtn">My Account</Button>
+                    <Button class="greenbtn" disabled>My Account</Button>
 
                     <?php
 
@@ -192,7 +208,7 @@ $userloginid = $_SESSION["userid"] = $_GET['userlogid'];
                                                                         } else {
                                                                             echo "display:none";
                                                                         } ?>">
-                    <Button class="greenbtn">Issue Record</Button>
+                    <Button class="greenbtn" disabled>Issue Record</Button>
 
                     <?php
 
@@ -253,7 +269,7 @@ $userloginid = $_SESSION["userid"] = $_GET['userlogid'];
                                                                         } else {
                                                                             echo "display:none";
                                                                         } ?>">
-                    <Button class="greenbtn">Request Book</Button>
+                    <Button class="greenbtn" disabled>Request Book</Button>
                     <div class="requestbookpanel">
 
                         <?php
