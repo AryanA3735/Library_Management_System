@@ -122,10 +122,17 @@
         $msg = $_REQUEST['msg'];
     }
 
-    if ($msg == "done") {
+    if ($msg == "done") 
+    {
         echo "<div class='alert alert-success' role='alert'>Sucssefully Done</div>";
-    } elseif ($msg == "fail") {
-        echo "<div class='alert alert-danger' role='alert'>Fail</div>";
+    } 
+    elseif ($msg == "New Add done")
+    {
+        echo "<div class='alert alert-danger' role='alert'>New User Successfully Added</div>";
+    }
+    elseif ($msg == "Register Fail")
+    {
+        echo "<div class='alert alert-danger' role='alert'>Registeration Fail</div>";
     }
 
     ?>
