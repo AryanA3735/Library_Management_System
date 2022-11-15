@@ -13,7 +13,7 @@ if($login_email==null||$login_pasword==null){
         $emailmsg="Email Empty";
     }
     if($login_pasword==null){
-        $pasdmsg="Pasword Empty";
+        $pasdmsg="Password Empty";
     }
 
     header("Location: index.php?ademailmsg=$emailmsg&adpasdmsg=$pasdmsg");
