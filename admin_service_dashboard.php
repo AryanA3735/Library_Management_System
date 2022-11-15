@@ -224,7 +224,7 @@
                 </div>
             </div>
 
-
+            <!-- echo '<script>alert("Password is tewe\nsfdfds\dfsd")</script>';                               -->
             <div class="rightinnerdiv">
                 <div id="addperson" class="innerright portion" style="display:none">
                     <Button class="greenbtn">Add Student</Button>
@@ -234,7 +234,7 @@
                                 <td><label>Name:</label></td> <td><input type="text" name="addname" /></td>
                             </tr>
                             <tr>
-                                <td><label>Pasword:</label></td> <td><input type="pasword" name="addpass" /></td>
+                                <td><label>Pasword:</label></td> <td><input type="pasword" name="addpass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required /></td>
                             </tr>
                             <tr>
                                 <td><label>Email:</label></td> <td><input type="email" name="addemail" /></td>

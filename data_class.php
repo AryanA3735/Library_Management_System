@@ -50,14 +50,22 @@ class data extends db {
 
     }
     function userLogin($t1, $t2) {
-        $q="SELECT * FROM userdata where email='$t1' and pass='$t2'";
+        $q="SELECT * FROM userdata where email='$t1'";
         $recordSet=$this->connection->query($q);
         $result=$recordSet->rowCount();
         if ($result > 0) {
 
             foreach($recordSet->fetchAll() as $row) {
-                $logid=$row['id'];
-                header("location: otheruser_dashboard.php?userlogid=$logid");
+                $hashPass = $row['pass'];
+                if(password_verify($t2, $hashPass))
+                {
+                    $logid=$row['id'];
+                    header("location: otheruser_dashboard.php?userlogid=$logid");
+                }
+                else
+                {
+                    header("location: index.php?msg=Invalid Credentials");
+                }
             }
         }
 
@@ -67,17 +75,38 @@ class data extends db {
 
     }
 
-    function adminLogin($t1, $t2) {
+    function adminLogin($t1, $t2) 
+    {
+        // $login_email,$login_pasword
 
-        $q="SELECT * FROM admin where email='$t1' and pass='$t2'";
+         // The plain text password to be hashed
+            // $plaintext_password = "Password@123";
+            
+            // The hash of the password that
+            // can be stored in the database
+            // $hash = password_hash($t2, PASSWORD_DEFAULT);
+  
+        // Print the generated hash
+        // echo "Generated hash: ".$hash;
+        $q="SELECT * FROM admin where email='$t1'";
         $recordSet=$this->connection->query($q);
+        // echo "recordset $hash\n";
+        // <script>console.log();</script>
         $result=$recordSet->rowCount();
 
         if ($result > 0) {
 
             foreach($recordSet->fetchAll() as $row) {
-                $logid=$row['id'];
-                header("location: admin_service_dashboard.php?logid=$logid");
+                $hashPass = $row['pass'];
+                if (password_verify($t2, $hashPass)) 
+                {
+                    $logid=$row['id'];
+                    header("location: admin_service_dashboard.php?logid=$logid");
+                    // echo 'Password Verified!';
+                } else 
+                {
+                    header("location: index.php?msg=Invalid Credentials");
+                }
             }
         }
 

@@ -29,8 +29,8 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `admin` (
   `id` int(11) NOT NULL,
-  `email` varchar(25) NOT NULL,
-  `pass` varchar(25) NOT NULL
+  `email` varchar(255) NOT NULL,
+  `pass` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -38,7 +38,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `email`, `pass`) VALUES
-(1, '2@gmail.com', '1111');
+(1, '2@gmail.com', '$2y$10$RVKlpo2vPq4N764FlgAo0u3OUulHxb27V5j/ddvUaBMrMTTNuB2la');
 
 -- --------------------------------------------------------
 
@@ -113,8 +113,8 @@ CREATE TABLE `requestbook` (
 CREATE TABLE `userdata` (
   `id` int(11) NOT NULL,
   `name` varchar(25) NOT NULL,
-  `email` varchar(25) NOT NULL,
-  `pass` varchar(25) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `pass` varchar(255) NOT NULL,
   `type` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -123,8 +123,8 @@ CREATE TABLE `userdata` (
 --
 
 INSERT INTO `userdata` (`id`, `name`, `email`, `pass`, `type`) VALUES
-(1, 'Yash', '1@gmail.com', '1111', 'student'),
-(2, 'demo2', 'demo2@gmail.com', '123', 'student');
+(1, 'Yash', '1@gmail.com', '$2y$10$RVKlpo2vPq4N764FlgAo0u3OUulHxb27V5j/ddvUaBMrMTTNuB2la', 'student'),
+(2, 'demo2', 'demo2@gmail.com', '$2y$10$lVTqU3/BTAUrsXUp7n81cuAPXeUM1jWT3w50OW7bEAg2rX9CFYSbq', 'student');
 
 --
 -- Indexes for dumped tables
