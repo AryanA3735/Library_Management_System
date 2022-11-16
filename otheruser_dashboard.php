@@ -19,7 +19,7 @@ $userloginid = $_SESSION["userid"] = $_GET['userlogid'];
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Admin Dashboard</title>
+    <title>User Dashboard</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="image/png" sizes="96x96" rel="icon" href="public/images/bitnami.png">
